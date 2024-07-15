@@ -7,8 +7,8 @@ This software was designed for companies or people with a lot of one product the
 2.) Install apache2: 'sudo apt install apache2'  <br>
 3.) Download all of this code  <br>
 4.) Log out of your aws instance onto your local machince  <br>
-5.) Use 'scp' to transfer all of the html files from your local into _~/var/www/html_ in your aws instance  <br>
-6.) Use 'scp' to transfer all of the css files into _~/var/www/html/css_  <br>
+5.) Use `scp` to transfer all of the html files from your local into _~/var/www/html_ in your aws instance  <br>
+6.) Use `scp` to transfer all of the css files into _~/var/www/html/css_  <br>
 7.) Using same method as above put the images into _~/var/www/html/images_  <br>
 8.) Using same nethod put js files into _~/var/www/html/js_  <br>
 9.) Refresh your browser with the given link on aws and see the webapp  <br>
