@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidding Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="header-container">
+            <h1>(Insert company) is auctioning off (insert<br>
+                number) (insert items). This item will be<br>
+                available for (insert limited time). Starting<br>
+                bid is (insert minimum bid amount).</h1>
+            <img src="images/myimage.jpg" alt="A description of the image">
+        </div>
+        <hr>
+        <form id="dataForm">
+            <div>
+                <label for="nameData">Name:</label>
+                <input type="text" id="nameData" name="nameData" required>
+            </div>
+            <div>
+                <label for="emailData">Email:</label>
+                <input type="text" id="emailData" name="emailData" required>
+            </div>
+            <div>
+                <label for="phoneData">Phone:</label>
+                <input type="text" id="phoneData" name="phoneData" required>
+            </div>
+            <div>
+                <label for="creditData">Credit card number:</label>
+                <input type="text" id="creditData" name="creditData" required>
+            </div>
+            <div>
+                <label for="bidData">Bid amount:</label>
+                <input type="text" id="bidData" name="bidData" required>
+            </div>
+            <button type="submit">Place bid</button>
+        </form>
+
+        <div id="output"></div>
+        <script src="js/scripts.js"></script>
+
+        <p style="color: green">Thank you! We will notify you if you won an item</p>
+    </div>
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+	<a href="bid.html">Bid</a>
+    </div>
+</body>
+</html>

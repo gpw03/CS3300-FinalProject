@@ -1,0 +1,72 @@
+<!--
+	This is a comment
+-->
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/styles.css">
+
+<html>
+
+<body>
+
+<div class="main-content">
+        <div class="header-container">
+            <h1>
+                    Rabid Troll Studios is auctioning off 36 <br>
+                    chromebooks! This item will be avaliable <br>
+                    for 5 days! The starting bid is $150!
+
+            </h1>
+            <!-- this is where the image goes -->
+            <img src="images/attn-corporate-and-institutional-office-chair-buyers-33.png" alt="Item 2">
+        </div>
+        <hr>
+        <form id="dataForm">
+            <div>
+                <label for="nameData">Name:</label>
+                <input type="text" id="nameData" name="nameData" required>
+            </div>
+            <div>
+                <label for="emailData">Email:</label>
+                <input type="text" id="emailData" name="emailData" required>
+            </div>
+            <div>
+                <label for="phoneData">Phone:</label>
+                <input type="text" id="phoneData" name="phoneData" required>
+            </div>
+            <div>
+                <label for="creditData">Credit card number:</label>
+                <input type="text" id="creditData" name="creditData" required>
+            </div>
+            <div>
+                <label for="bidData">Bid amount:</label>
+                <input type="text" id="bidData" name="bidData" required>
+            </div>
+        </form>
+
+    <!-- My Button -->
+    <button id="MyButton">Place Bid</button>
+     <!-- My Heading -->
+    <h1 id="MyHeading"></h1>
+   
+   </div>
+        <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="bid.html">Bid</a>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+        //Select button by id
+        const MyButton = document.getElementById('MyButton');
+
+                //Add on click listener for button
+                MyButton.addEventListener('click', function()
+                {
+                        document.getElementById('MyHeading').innerText = "Thank you! We will notify you if you've won an item!"
+                })
+</script>
