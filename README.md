@@ -4,7 +4,7 @@ This software was designed for companies or people with a lot of one product the
 
 ## Instructions
 1.) Log into your aws instanse  <br>
-2.) Install apache2: 'sudo apt install apache2'  <br>
+2.) Install apache2: `sudo apt install apache2`  <br>
 3.) Download all of this code  <br>
 4.) Log out of your aws instance onto your local machince  <br>
 5.) Use `scp` to transfer all of the html files from your local into _~/var/www/html_ in your aws instance  <br>
