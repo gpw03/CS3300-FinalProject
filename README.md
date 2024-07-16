@@ -2,6 +2,8 @@
 ## Description 
 This software was designed for companies or people with a lot of one product they want to auction off. There is currently indivudual pages for the item being auctioned, that ask for information of the customer. This web app was created using an ec2 aws instance through ubuntu on apache2 web servers. 
 
+GitHub: https://github.com/gpw03/CS3300-FinalProject.git
+
 ## Instructions
 1.) Log into your aws instanse  <br>
 2.) Install apache2: `sudo apt install apache2`  <br>
