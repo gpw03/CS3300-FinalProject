@@ -12,9 +12,9 @@
 <div class="main-content">
         <div class="header-container">
             <h1>
-                    Rabid Troll Studios is auctioning off 36 <br>
-                    chromebooks! This item will be avaliable <br>
-                    for 5 days! The starting bid is $150!
+                    UCCS is auctioning off 99 <br>
+                    office chairs! This item will be avaliable <br>
+                    for 5 days! The starting bid is $75!
 
             </h1>
             <!-- this is where the image goes -->
@@ -61,12 +61,20 @@
 </html>
 
 <script>
+	function incrementCount(){
+			console.log('Button clicked');
+                        let countThree = parseInt(localStorage.getItem('countThree') || '0');
+                        countThree++;
+                        localStorage.setItem('countThree', countThree);
+			console.log('Current count:', countThree);
+                }
         //Select button by id
         const MyButton = document.getElementById('MyButton');
 
                 //Add on click listener for button
                 MyButton.addEventListener('click', function()
                 {
+			incrementCount();
                         document.getElementById('MyHeading').innerText = "Thank you! We will notify you if you've won an item!"
                 })
 </script>

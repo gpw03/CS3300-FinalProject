@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bidding Software</title>
     <link rel="stylesheet" href="css/styleHome.css">
+
+    <script>
+	    function updateCount() {
+		    const count = localStorage.getItem('count') || 0;
+		    document.getElementById('count').textContent = count;
+		    const countTwo = localStorage.getItem('countTwo') || 0;
+		    document.getElementById('countTwo').textContent = countTwo;
+		    const countThree = localStorage.getItem('countThree') || 0;
+		    document.getElementById('countThree').textContent = countThree;
+	    }
+
+	    window.onload = function(){
+		    updateCount();
+	    };
+
+    </script>
 </head>
 <body>
     <header>
@@ -36,7 +52,7 @@
                 <div class="item">
                     <img src="images/Chairlift_Solitude-Mountain-Resort-900x506.jpg" alt="Item 1">
                     <h3>Ski Chair</h3>
-                    <p>Current Bids: 0</p>
+		    <p>Current Bids: <span id="count">0</span></p>
 		    <p>Starting Price: $250 <p>
 
 		    <!-- This is where the timer is declared and will be shown -->
@@ -49,7 +65,7 @@
                 <div class="item">
                     <img src="images/Chromebook-Churn-Banner-1-1500x844.jpg" alt="Item 2">
                     <h3>Chromebook</h3>
-                    <p>Current Bids:0</p>
+		    <p>Current Bids: <span id="countTwo">0</span></p>
 		    <p>Starting Price: $150<p>
 		
 		     <!-- This is where the timer is declared and will be shown -->
@@ -62,8 +78,8 @@
                 <div class="item">
                     <img src="images/attn-corporate-and-institutional-office-chair-buyers-33.png" alt="Item 3">
                     <h3>Office Chairs</h3>
-                    <p>Current Bids:0</p>
-		    <p>Starting Price: idk<p>
+		    <p>Current Bids: <span id="countThree">0</span></p>
+		    <p>Starting Price: $75<p>
 
 		     <!-- This is where the timer is declared and will be shown -->
                     <div id = "timerThree"></div>

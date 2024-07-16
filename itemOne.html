@@ -57,12 +57,20 @@
 </html>
 
 <script>
+	function incrementCount(){
+			console.log('Button clicked');
+                        let count = parseInt(localStorage.getItem('count') || '0');
+                        count++;
+                        localStorage.setItem('count', count);
+			console.log('Current count:', count);
+                }
         //Select button by id
         const MyButton = document.getElementById('MyButton');
-
                 //Add on click listener for button
                 MyButton.addEventListener('click', function()
                 {
+			incrementCount();
                         document.getElementById('MyHeading').innerText = "Thank you! We will notify you if you've won an item!"
+		
                 })
 </script>
