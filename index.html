@@ -40,8 +40,9 @@
 		    <p>Starting Price: $250 <p>
 
 		    <!-- This is where the timer is declared and will be shown -->
-		    <div id = "timer"></div>
+		    <div id = "timerOne"></div>
 		    <a href = "itemOne.html">
+	            <p></p>
                     	<button>Bid Now</button>
 		    </a>
                 </div>
@@ -50,16 +51,24 @@
                     <h3>Chromebook</h3>
                     <p>Current Bids:0</p>
 		    <p>Starting Price: $150<p>
+		
+		     <!-- This is where the timer is declared and will be shown -->
+                    <div id = "timerTwo"></div>
 		    <a href = "itemTwo.html">
+		    <p></p>
                    	 <button>Bid Now</button>
 		    </a>
                 </div>
                 <div class="item">
                     <img src="images/attn-corporate-and-institutional-office-chair-buyers-33.png" alt="Item 3">
-                    <h3>Item 3</h3>
+                    <h3>Office Chairs</h3>
                     <p>Current Bids:0</p>
 		    <p>Starting Price: idk<p>
+
+		     <!-- This is where the timer is declared and will be shown -->
+                    <div id = "timerThree"></div>
 		    <a href="itemThree.html">
+		    <p></p>
                     	<button>Bid Now</button>
 		    </a>
 		</div>
@@ -71,10 +80,11 @@
     </footer>
 </body>
 
-<!-- This is the script for the timer (We might have to repeat this 3 times if we want to make it work for 3 different timers -->
+<!-- This is the script for the timer (We might have to repeat this 3 times if we want to make it work for 3 different timers
+	Item One Timer -->
 <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jul 20, 2024 15:37:25").getTime();
+        var countDownOne = new Date("Jul 20, 2024 15:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -83,7 +93,7 @@
             var now = new Date().getTime();
 
             // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+            var distance = countDownOne - now;
 
             // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -92,16 +102,85 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="timer"
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            document.getElementById("timerOne").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
             // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
+                document.getElementById("timerOne").innerHTML = "EXPIRED";
             }
         }, 1000);
-    </script>
+</script>
+
+<!-- This is the script for the timer (We might have to repeat this 3 times if we want to make it work for 3 different timers
+        Item Two Timer -->
+<script>
+        // Set the date we're counting down to
+        var countDownTwo = new Date("Jul 27, 2024 8:15:36").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownTwo - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="timer"
+            document.getElementById("timerTwo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timerTwo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+</script>
+
+<!-- This is the script for the timer (We might have to repeat this 3 times if we want to make it work for 3 different timers
+        Item Three Timer -->
+<script>
+        // Set the date we're counting down to
+        var countDownThree = new Date("Jul 17, 2024 12:4:31").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownThree - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="timer"
+            document.getElementById("timerThree").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timerThree").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+</script>
+
+
+
 
 </html>
 
